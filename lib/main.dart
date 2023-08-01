@@ -37,16 +37,16 @@ class TestView extends StatelessWidget {
       bottom: false,
       child: Column(
         children: [
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
-          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 5))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
+          Wrap(children: List.generate(100, (index) => const MyAnimation(size: 2))),
           const Expanded(child: TestList()),
         ],
       ),
@@ -106,6 +106,7 @@ class _TestListState extends State<TestList> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              // https://www.svgrepo.com/collection/dazzle-line-icons/
                               Assets.images.circleHeatSvgrepoCom.svg(width: 24, height: 24, color: Colors.red),
                               Assets.images.cloudArrowDownSvgrepoCom.svg(width: 24, height: 24, color: Colors.indigo),
                               Assets.images.cloudBoltSvgrepoCom.svg(width: 24, height: 24, color: Colors.purple),
